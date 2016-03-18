@@ -15,6 +15,8 @@ grains.forEach(function (grain) {
   $p.html(grain.desc);
 
   $li.append($img);
+  $li.append($h2);
+  $li.append($p);
   $ul.append($li);
 
 });
