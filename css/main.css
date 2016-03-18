@@ -14,12 +14,13 @@ html {
 }
 
 .grains li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
 }
 
 .grains img {
-  width: 100px;
+  width: 110px;
   float: left;
+  padding-right: 1rem;
 
 }
 
@@ -33,4 +34,5 @@ html {
   width: 300px;
   padding: 0;
   margin: 0;
+  font-style: italic;
 }
