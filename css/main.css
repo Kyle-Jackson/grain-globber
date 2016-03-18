@@ -15,11 +15,13 @@ html {
 }
 
 .grains li {
-
+  margin-bottom: 1.5rem;
 }
 
 .grains img {
   width: 100px;
+  display: block;
+
 }
 
 .grains h2 {

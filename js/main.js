@@ -1,7 +1,11 @@
-var $h1 = $('h1');
+var $grains = $('grains')
 var $ul = $('ul');
+var $h2 = $('h2');
+var $p = $('p');
+var $li = $('li');
 
-$h1.html('Dinosaurs!');
+
+$h2.html('Grains');
 $ul.addClass('grains');
 
 $('.more-grains').remove();
@@ -12,11 +16,12 @@ grains.forEach(function (grains) {
   var $img = $('<img>');
   var $caption = $('<figcaption>');
 
-  $caption.html(grains.name)
-  $img.attr('src','images/' + grains.img);
+  $caption.html(grains.name);
+  $img.attr('src', 'images/' + grains.img);
 
-  $figure.append($img, $caption)
-  $li.append($figure)
+  $figure.append($img, $caption);
+  $li.append($figure);
   $ul.append($li);
+
 
 });
