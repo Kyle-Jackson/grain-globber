@@ -1,27 +1,20 @@
-var $grains = $('grains')
+var $grains = $('grains');
 var $ul = $('ul');
 var $h2 = $('h2');
 var $p = $('p');
 var $li = $('li');
 
-
-$h2.html('Grains');
-$ul.addClass('grains');
-
-$('.more-grains').remove();
-
-grains.forEach(function (grains) {
-  var $li = $('<li>');
-  var $figure = $('<figure>');
+grains.forEach(function (grain) {
+  var $h2 = $('<h2>');
   var $img = $('<img>');
-  var $caption = $('<figcaption>');
+  var $p = $('<p>');
+  var $li = $('<li>');
 
-  $caption.html(grains.name);
-  $img.attr('src', 'images/' + grains.img);
+  $img.attr('src', 'images/' + grain.img);
+  $h2.html(grain.name);
+  $p.html(grain.desc);
 
-  $figure.append($img, $caption);
-  $li.append($figure);
+  $li.append($img);
   $ul.append($li);
-
 
 });
